@@ -1,6 +1,6 @@
 
 
-# Crop Details Project
+# Crop Details Dashboard  Project
 
 This repository contains the source code for a web application that provides detailed information about various crops. The application includes a search functionality to find crops and view their details, user input for adding qualities of crops, and graphical representations of production trends.
 
