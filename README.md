@@ -10,7 +10,6 @@ This repository contains the source code for a web application that provides det
 - [Installation](#installation)
 - [Usage](#usage)
 - [Technologies Used](#technologies-used)
-- [Screenshots](#screenshots)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -46,10 +45,6 @@ This repository contains the source code for a web application that provides det
 - CSS
 - JavaScript
 
-## Screenshots
-
-![Sunflower Crop Details](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fsunflowers%2F&psig=AOvVaw3W-eDNKWSUJqzpm9iWB1Rk&ust=1720772805727000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNCD5LLInocDFQAAAAAdAAAAABAE)
-![Production Trends Graph](images/graph-placeholder.png)
 
 ## Contributing
 
