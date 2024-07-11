@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+    <title>admin dashboard</title>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript">
+
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, includedLanguages: 'hi,en,bn,pa,mr,ur,ta,as,ne,ml,sa,or,te,gu' }, 'google_translate_element');
+        }
+    </script>
+
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="assets/fonts/css/all.min.css">
+
+    <!-- <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head> -->
+
+<body>
+    <!-- Sample input fields -->
+    <!-- <input type="number" id="temperatureInput" placeholder="Temperature">
+    <input type="number" id="rainfallInput" placeholder="Rainfall">
+ -->
+
+
+    <!-- Link to the JavaScript file -->
+
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <div class="brand-flex">
+                <img src="img/logo.png" width="40px" alt="">
+                <div class="brand-icons">
+                    <span class="las la-bell"></span>
+                    <span class="las la-user-circle"></span>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar-main">
+            <div class="sidebar-user">
+                <img src="assets/images/john.jpg" alt="">
+                <h3>Sukhvirdhi</h3>
+                <span>Sukhvirdhi123@gmail.com</span>
+            </div>
+            <div class="greet">
+                <h4>Good Morning!</h4>
+            </div>
+        </div>
+        <div class="sidebar-menu">
+            <!-- <div class="menu-head">
+                <span>Farmer's Profile</span>
+
+            </div> -->
+            <ul>
+                <li>
+                    <a href="">
+                        <span class="las la-balance-scale"></span>
+                        Crops Information
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="las la-chart-pie"></span>
+                        Farm's Information
+                    </a>
+                </li>
+            </ul>
+            <!-- <div class="menu-head">
+                <span>Tools and Utilities</span>
+
+            </div> -->
+            <ul>
+                <li>
+                    <a href="">
+                        <span class="las la-calendar"></span>
+                        Season
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="las la-users"></span>
+                        contacts
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="las la-shopping-cart"></span>
+                        Marketplace
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="las la-envelope"></span>
+                        mailbox
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="las la-check-circle"></span>
+                        Crops Categories
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="las la-check-circle"></span>
+                            Edit Profile
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <!-- <select id="language-selector">
+              <option value="hi">Hindi</option>
+              <option value="en">English</option>
+              <option value="bn">Bengali</option>
+              <option value="pa">Punjabi</option>
+              <option value="mr">Marathi</option>
+            </select> -->
+            <div class="menu-toggle">
+                <label for="">
+                    <span class="las la-bars"></span>
+                </label>
+            </div>
+            <div class="translate">
+                <div id="google_translate_element"></div>
+            </div>
+            <div class="header-icons">
+                <span class="las la-search"></span>
+                <span class="las la-bookmark"></span>
+                <span class="las la-sms"></span>
+            </div>
+        </header>
+        <main class="main">
+            <div class="page-header">
+                <div>
+                    <h1> Farmers dashboard</h1>
+                    <small>The Farmers Dashboard is a comprehensive tool designed to empower farmers with real-time data
+                        and insights.
+                        By integrating critical information such as weather forecasts, crop health monitoring, soil
+                        quality analysis,
+                        and market trends, this dashboard helps farmers make informed decisions to enhance productivity
+                        and sustainability.</small>
+                </div>
+                <div class="header-actions">
+                    <div class="dropdown">
+                        <button class="dropbtn">Crops<i class="fa-solid fa-angle-down"></i> </button>
+                        <div class="dropdown-content">
+                            <a href="#">RICE</a>
+                            <a href="">WHEAT</a>
+                            <a href="">MILLET</a>
+                            <a href="">TEA</a>
+                            <a href="">COFFEE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="card-single">
+                                <div class="crop-info">
+                                    <div class="crop-head">
+                                        <span>Crop Name</span>
+                                    </div>
+                                    <h3>Rice</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card-single">
+                                <div class="crop-info">
+                                    <div class="crop-head">
+                                        <span>Total Production</span>
+                                    </div>
+                                    <h3>150 Kg</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Weather Conditions section -->
+                        <div class="col-md-2">
+                            <div class="card-single">
+                                <div class="crop-info">
+                                    <div class="crop-head">
+                                        <span>Temperature</span>
+                                    </div>
+                                    <h3>32°C</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card-single">
+                                <div class="card-flex">
+                                    <div class="card-info">
+                                        <div class="card-head">
+                                            <span>Soil Quality</span>
+                                        </div>
+                                        <h2 id="soil-quality-status">Good</h2>
+                                    </div>
+                                    <div class="card-chart green">
+                                        <div class="card-chart green">
+                                            <canvas id="soilQualityGauge"></canvas>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card-single">
+                                <div class="card-flex">
+                                    <div class="card-info">
+                                        <div class="card-head">
+                                            <small>Area of Land</small>
+                                        </div>
+                                        <h2>150 acres</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="job-grid">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="analytics-card">
+                                <div class="analytics-head">
+                                    <h2>Harvested Yield vs. Expected Yield</h2>
+                                    <span class="las la-ellipsis-h"></span>
+                                </div>
+                                <div class="analytics-chart">
+                                    <canvas id="harvestedVsExpectedChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="analytics-card">
+                                <div class="analytics-head">
+                                    <h2>Crop Distribution</h2>
+                                    <span class="las la-ellipsis-h"></span>
+                                </div>
+                                <div class="analytics-chart">
+                                    <canvas id="cropDistributionChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="analytics-card1">
+                            <div class="grocery-tips-section">
+                                <h1>Grocery Tips</h1>
+                                <div class="carousel">
+                                    <div id="tip1" class="tip">
+                                        <h3></h3>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+    <script src="new.js"></script>
+    <script type="text/javascript">
+        function updateTranslation() {
+            var selectedLanguage = document.getElementById('language-selector').value;
+            google.translate.TranslateElement.translatePage(document.body, selectedLanguage);
+        }
+        document.getElementById('language-selector').addEventListener('change', updateTranslation);
+        updateTranslation();
+    </script>
+</body>
+
+</html>

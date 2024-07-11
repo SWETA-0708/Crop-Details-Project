@@ -1,0 +1,129 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+h2 {
+    background-color: #4CAF50;
+    color: white;
+    margin: 0;
+    padding: 10px 20px;
+    border-bottom: 4px solid #3e8e41;
+    border-radius: 10px 10px 0 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.season-content {
+    display: flex;
+    background: linear-gradient(135deg, #c3e6cb, #ffeeba); /* Light green and yellow gradient */
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .season-content {
+        flex-direction: column;
+    }
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h3 {
+    color: #4CAF50;
+    margin-top: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    background: linear-gradient(135deg, #c3e6cb, #ffeeba); /* Light green and yellow gradient */
+    padding: 20px;
+}
+
+.crop-image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.crop-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background: linear-gradient(to right, #4CAF50, #2E8B57);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-container input[type=text] {
+    padding: 8px;
+    margin-right: 5px;
+    color: #fff; /* Set the text color to white */
+}

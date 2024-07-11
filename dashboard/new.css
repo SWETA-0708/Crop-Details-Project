@@ -1,0 +1,463 @@
+:root {
+    --sidebar-width: 280px;
+    --header-height: 65px;
+    --card-padding: 1rem;
+    --chart-size: 5rem;
+}
+
+/* Reset */
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    width: var(--sidebar-width);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    padding: 1.5rem 1rem; /* Adjusted padding */
+    background: rgb(37, 110, 76);
+    color: #fff;
+}
+
+/* Sidebar Brand */
+.sidebar-brand {
+    height: 70px;
+}
+
+.brand-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-icons span {
+    font-size: 1.5rem;
+    margin-left: .5rem;
+}
+
+.sidebar-user {
+    margin: 0 0 1.5rem 0; /* Adjusted margin */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.greet h4{
+    text-align: center;
+}
+
+
+.sidebar-user img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    border-color: #efefef;
+    margin-bottom: 1rem; /* Adjusted margin */
+}
+
+.sidebar-user h3 {
+    font-size: 1.2rem; /* Adjusted font size */
+    margin: 0;
+    text-align: center;
+}
+
+.sidebar-user span {
+    font-size: .8rem;
+}
+
+.sidebar-menu {
+    margin-top: 2.5rem; /* Adjusted margin */
+}
+
+.menu-head {
+    text-transform: uppercase;
+    color: #8da2fb;
+    font-size: .9rem; /* Adjusted font size */
+    font-weight: 500;
+    margin-bottom: 1rem; /* Adjusted margin */
+}
+
+.sidebar-menu ul {
+    margin-bottom: 1.5rem;
+}
+
+.sidebar-menu li {
+    margin-bottom: .8rem;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-menu li a {
+    color: #efefef;
+    font-size: 1rem; /* Adjusted font size */
+}
+
+.sidebar-menu li a span {
+    font-size: 1.2rem; /* Adjusted font size */
+    display: inline-block;
+    margin-right: .5rem; /* Adjusted margin */
+}
+
+/* Header */
+header {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1rem;
+}
+
+.menu-toggle label {
+    height: 60px;
+    width: 60px;
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
+
+.header-icons span {
+    display: inline-block;
+    margin-left: .7rem;
+    font-size: 1.4rem;
+}
+
+.translate {
+    font-size: 1rem;
+    align-items: right;
+    justify-content: right;
+}
+
+.menu-toggle label:hover {
+    background: #efefef;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: var(--sidebar-width);
+}
+
+/* Main */
+.main {
+    padding: 1.5rem;
+    background: #f1f5f9;
+    min-height: calc(100vh - var(--header-height));
+}
+
+/* Page Header */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ph {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+/* Header Actions */
+.header-actions button {
+    outline: none;
+    color: #fff;
+    background: #5850ec;
+    border: none;
+    padding: 0.9rem; /* Adjusted padding */
+    margin-right: 0px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.dropdown-item {
+    position: absolute;
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1.5rem; /* Adjusted padding */
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    text-align: center;
+    background-color: #f1f1f1e0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.303);
+    z-index: 1;
+    right: 0;
+    left: auto;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #5850ec;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 0.8rem 1.2rem; /* Adjusted padding */
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #5850ec;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    border-radius: 3px;
+    padding: 0.6rem; /* Adjusted padding */
+    font-size: 1rem; /* Adjusted font size */
+    border: none;
+    margin: 1.2rem 1rem; /* Adjusted margin */
+}
+
+.dropbtn:hover {
+    color: #ffffff;
+}
+
+.buto {
+    border-radius: 10px;
+    background-color: black;
+    margin-left: 2.5rem; /* Adjusted margin */
+    color: white;
+    border-color: white;
+}
+
+.header-actions button span {
+    font-size: 1rem;
+    margin-right: .5rem;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    grid-gap: 1rem; /* Adjusted gap */
+    margin-top: 1rem;
+}
+
+.card-single {
+    background: #fff;
+    padding: var(--card-padding);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px; /* Adjusted border radius */
+}
+
+.card-flex {
+    display: grid;
+    grid-template-columns: 40% auto;
+    align-items: center;
+}
+
+.card-head span {
+    display: block;
+    text-transform: uppercase;
+    color: #555;
+    font-size: 0.9rem; /* Adjusted font size */
+}
+
+.card-head small {
+    font-weight: 500;
+    color: #555;
+}
+
+.card-info h2 {
+    font-size: 1.2rem; /* Adjusted font size */
+}
+.card-chart span {
+    font-size: 2rem; /* Adjusted font size */
+}
+
+.card-chart.success span {
+    color: seagreen;
+}
+
+.card-chart.danger span {
+    color: tomato;
+}
+
+.card-chart.yellow {
+     size: 50px;
+    color: orangered;
+}
+
+/* Job Grid */
+.job-grid {
+    margin-top: 1.5rem; /* Adjusted margin */
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap */
+    gap: 1rem; /* Adjusted gap */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 220px; /* Adjusted width for smaller screens */
+    }
+
+    .main-content {
+        margin-left: 0; /* Remove margin for smaller screens */
+    }
+
+    .cards {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+    }
+
+    .header-actions button {
+        margin-right: 1rem; /* Adjusted margin */
+    }
+
+    .dropdown {
+        margin: 1.2rem 0; /* Adjusted margin */
+    }
+}/* Crop Yield Chart */
+.crop-yield-chart {
+    margin-top: 2rem; /* Adjust margin as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cropYieldChartSmall {
+    width: 200px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+}
+.weather-info {
+    padding: 1rem;
+}
+
+.weather-info .card-head {
+    margin-bottom: 1rem;
+}
+
+.weather-info h2 {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+#weather-icon-img {
+    max-width: 80px;
+    max-height: 80px;
+}
+.card-icon img {
+    width: var(--icon-size);
+    height: auto;
+    margin-right: 10px;
+}
+.analytics-card {
+    background: #fff;
+    padding: 1em;
+
+}
+
+.analytics-chart{
+    display: block;
+    box-sizing: border-box;
+    height: 200px;
+    width: 400px;
+}
+.analytics-card1{
+    background: #fff;
+    margin-top: 10px;
+    padding: 1em;
+
+}
+/* .crop-yield-section{
+    align-items: center;
+    height:300px;
+    width: 800px;
+} */
+/* .crop-yield-chart {
+    width: 100%; Set the width to 100% of the parent container
+     height: 300px;Set a fixed height, or adjust as needed
+} 
+.cropYieldChartSmall{
+    width: 100%; Set the width to 100% of the parent container
+    height: 300px; Set a fixed height, or adjust as needed
+}
+.crop-yield-section h1{
+    text-align: center;
+    font-size :30px;
+
+} */
+.col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.analytics-card1 {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(6, 106, 6, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.grocery-tips-section {
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel {
+    display: flex;
+    width: auto;
+    animation: move 20s infinite linear;
+}
+
+.tip {
+    min-width: 100%;
+    background-color: #fafac4;
+    border: 1px solid #84ea45;
+    border-radius: 5px;
+    padding: 15px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+.tip h3 {
+    margin-top: 0;
+    color: #064408;
+}
+
+.tip p {
+    color: #777777;
+}
+
+@keyframes move {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}

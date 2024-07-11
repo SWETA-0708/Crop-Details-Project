@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farming Seasons: Kharif, Rabi, and Zaid</title>
+    <link rel="stylesheet" href="season.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Farming Seasons</h1>
+        <nav>
+            <ul>
+                <li><a href="#kharif">Kharif</a></li>
+                <li><a href="#rabi">Rabi</a></li>
+                <li><a href="#zaid">Zaid</a></li>
+            </ul>
+            <!-- Search Icon and Input Field -->
+            <div class="search-container">
+                <input type="text" id="crop-search" placeholder="Enter crop name...">
+                <button onclick="searchCrop()"><i class="fas fa-search"></i></button>
+            </div>
+        </nav>
+        <!-- Search Results -->
+        <div id="search-results" class="search-results"></div>
+    </header>
+    <main>
+        <section id="kharif">
+            <h2>Kharif Season</h2>
+            <div class="season-content">
+                <div class="text">
+                    <p>Kharif crops are sown with the onset of the monsoon in June and harvested in September-October. These crops require a lot of water and hot weather to grow.</p>
+                    <h3>Crops Grown</h3>
+                    <ul>
+                        <li>Rice</li>
+                        <li>Cotton</li>
+                        <li>Soybean</li>
+                        <li>Sugarcane</li>
+                        <li>Maize</li>
+                    </ul>
+                </div>
+                <div class="images">
+                    <img src="assets/Crops_images/Kharif/Cotton.jpg" alt="Rice" class="crop-image">
+                    <img src="assets/Crops_images/Kharif/bajra.jpg" alt="Cotton" class="crop-image">
+                    <img src="assets/Crops_images/Kharif/groundnut.jpg" alt="Cotton" class="crop-image">
+                    <!-- Add more images here -->
+                </div>
+            </div>
+        </section>
+        
+        <section id="rabi">
+            <h2>Rabi Season</h2>
+            <div class="season-content">
+                <div class="text">
+                    <p>Rabi crops are sown in winter from October to December and harvested in summer from April to June. These crops require a cooler climate to grow and ripen.</p>
+                    <h3>Crops Grown</h3>
+                    <ul>
+                        <li>Wheat</li>
+                        <li>Barley</li>
+                        <li>Mustard</li>
+                        <li>Peas</li>
+                        <li>Chickpea</li>
+                    </ul>
+                </div>
+                <div class="images">
+                    <img src="assets/Crops_images/Rabi/barley.jpg" alt="Wheat" class="crop-image">
+                    <img src="assets/Crops_images/Rabi/chickpea.jpg" alt="Mustard" class="crop-image">
+                    <!-- Add more images here -->
+                </div>
+            </div>
+        </section>
+        
+        <section id="zaid">
+            <h2>Zaid Season</h2>
+            <div class="season-content">
+                <div class="text">
+                    <p>Zaid crops are grown between the Kharif and Rabi seasons, mainly from March to June. These crops are typically fast-growing and require warm, dry weather.</p>
+                    <h3>Crops Grown</h3>
+                    <ul>
+                        <li>Cucumber</li>
+                        <li>Watermelon</li>
+                        <li>Muskmelon</li>
+                        <li>Pumpkin</li>
+                        <li>Moong Dal</li>
+                    </ul>
+                </div>
+                <div class="images">
+                    <img src="assets/Crops_images/Zaid/Bittergourd.webp" alt="Cucumber" class="crop-image">
+                    <img src="assets/Crops_images/Zaid/Cucumber.jpg" alt="Watermelon" class="crop-image">
+                    <img src="assets/Crops_images/Zaid/Muskmelon.jpg" alt="Watermelon" class="crop-image">
+                    <!-- Add more images here -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Farming Seasons</p>
+    </footer>
+
+    <script src="season.js"></script>
+</body>
+</html>

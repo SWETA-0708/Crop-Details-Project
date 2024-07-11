@@ -1,0 +1,154 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #c2f0c2, #96e996); /* green gradient */
+  }
+  
+  
+  /* Navigation Styles */
+  
+  /* CSS for navigation */
+  
+  /* CSS for navigation */
+  
+  nav {
+    background-color: #006400; /* Dark green */
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links {
+    display: flex;
+  }
+  
+  .nav-links a {
+    margin-left: 20px;
+    color: #fff; /* Set the color of all links to white */
+  }
+  
+  .nav-links a:hover {
+    color: #4CAF50; /* Change the color of links on hover */
+  }
+  
+  .heading {
+    margin: 0; /* Remove default margin */
+  }
+  
+  .align-right {
+    margin-left: auto; /* Align to the right */
+  }
+  
+  
+  /* Crop Details Styles */
+  
+  #crop-details {
+    padding: 20px;
+    background-color: #fff; /* changed background color to white */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  /* Conditions Styles */
+  
+  .conditions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .condition {
+    flex-basis: calc(50% - 20px);
+    margin: 10px;
+    background-color: #e0f2e9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .condition:hover {
+    background-color: #b2f7c6;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .condition h2 {
+    margin-top: 0;
+    color: #4CAF50; /* changed color to dark green */
+    font-family: "Arial Black", sans-serif; /* changed font */
+    font-size: 18px; /* adjusted font size */
+  }
+  
+  .condition.icon {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #4CAF50;
+  }
+  
+  /* User Additions Styles */
+  
+  #user-additions {
+    margin-top: 40px;
+  }
+  
+  #qualities-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #qualities-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #qualities-list li:last-child {
+    border-bottom: none;
+  }
+  
+  #user-quality-input {
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #add-quality-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #add-quality-button:hover {
+    background-color: #444;
+  }
+  
+  /* Graphs Styles */
+  
+  #graphs {
+    margin-top: 40px;
+  }
+  
+  #graphs img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
