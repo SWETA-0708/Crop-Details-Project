@@ -24,7 +24,7 @@ This repository contains the source code for a web application that provides det
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/crop-details.git
+   git clone https://github.com/sweta-0708/crop-details.git
    ```
 2. Navigate to the project directory:
    ```sh
